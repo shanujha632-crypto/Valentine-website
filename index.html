@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Valentine 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=DM+Sans:wght@400;500;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--pink:#FFB3D9;
+--soft-pink:#FFE5F1;
+--coral:#FF8FAB;
+--beige:#FFF5E4;
+--soft-red:#FF6B9D;
+--cream:#FFFEF9;
+--text:#5A4A4A;
+}
+body{
+font-family:'DM Sans',sans-serif;
+background:linear-gradient(135deg,var(--beige),var(--soft-pink));
+color:var(--text);
+overflow-x:hidden;
+}
+.container{max-width:900px;margin:auto;padding:20px}
+.hero{text-align:center;padding:80px 20px}
+.hero h1{
+font-family:'Righteous',cursive;
+font-size:3.5rem;
+color:var(--soft-red);
+}
+.hero p{font-size:1.3rem;margin-top:15px}
+
+.btn{
+font-family:'Fredoka',sans-serif;
+font-size:1.4rem;
+padding:18px 45px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+margin:20px;
+}
+.btn-yes{background:linear-gradient(135deg,var(--soft-red),var(--coral));color:#fff}
+.btn-no{background:#ddd}
+
+.success-section{display:none;text-align:center;padding:50px}
+.success-section.show{display:block}
+
+.love-letter{
+background:#fff;
+border-radius:20px;
+padding:40px;
+margin:40px 0;
+box-shadow:0 10px 30px rgba(0,0,0,.1)
+}
+.letter-text{
+background:var(--cream);
+padding:25px;
+border-radius:15px;
+font-style:italic;
+line-height:1.8
+}
+
+.section-title{
+font-family:'Righteous',cursive;
+color:var(--soft-red);
+text-align:center;
+margin:50px 0 30px;
+font-size:2.5rem
+}
+
+.photo-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px
+}
+.photo-card{
+background:#fff;
+padding:15px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.1)
+}
+.photo-card img{width:100%;border-radius:15px}
+.photo-caption{text-align:center;margin-top:10px}
+
+.date-plans{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1)
+}
+.date-item{
+background:linear-gradient(135deg,var(--soft-pink),var(--beige));
+padding:20px;
+border-radius:15px;
+margin-bottom:15px
+}
+
+.surprise-btn{
+width:100%;
+padding:18px;
+border:none;
+border-radius:15px;
+background:linear-gradient(135deg,var(--coral),var(--soft-red));
+color:#fff;
+font-size:1.2rem;
+margin-top:15px;
+cursor:pointer
+}
+.surprise-message{
+display:none;
+background:var(--cream);
+padding:20px;
+border-radius:15px;
+margin-top:10px
+}
+.surprise-message.show{display:block}
+
+footer{text-align:center;margin:40px 0;font-size:1.1rem}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<section class="hero">
+<h1>Sweety, Will You Be My Valentine? 💕</h1>
+<p>From my heart, this is for you…</p>
+<button class="btn btn-yes" onclick="showLove()">YES 💖</button>
+<button class="btn btn-no">No 😢</button>
+</section>
+
+<section class="success-section" id="success">
+<h2>Yayyy! 💕</h2>
+<p>You just made me the happiest person alive 🥹</p>
+</section>
+
+<section class="love-letter">
+<div class="letter-text">
+Dear Sweety,<br><br>
+I still remember our first date on <b>15th February</b> at <b>Sunder Nursery</b>.  
+That day wasn’t just a date — it was the beginning of something beautiful.<br><br>
+Walking with you, talking endlessly, sharing smiles… I felt peace, happiness,
+and a kind of love I had never known before.<br><br>
+Since that day, every moment with you feels special. You are my comfort, my joy,
+and my biggest blessing.<br><br>
+I don’t just love you — I choose you. Today, tomorrow, and for my entire life.
+I want to grow old with you, laugh with you, and love you forever.<br><br>
+Forever yours,<br>
+<b>Shanu ❤️</b>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Our Photobooth Memories 📸</h2>
+<div class="photo-grid">
+<div class="photo-card">
+<img src="photo1.jpg">
+<div class="photo-caption">Our smiles say everything 💕</div>
+</div>
+<div class="photo-card">
+<img src="photo2.jpg">
+<div class="photo-caption">One frame, a thousand emotions 🥹</div>
+</div>
+<div class="photo-card">
+<img src="photo3.jpg">
+<div class="photo-caption">Every picture, a promise 💖</div>
+</div>
+<div class="photo-card">
+<img src="photo4.jpg">
+<div class="photo-caption">Us — always & forever ✨</div>
+</div>
+</div>
+</section>
+
+<section class="date-plans">
+<h2 class="section-title">Our Date Plans 💞</h2>
+<div class="date-item">
+<h3>🎬 Movie Dates</h3>
+<p>Late night movies, shared popcorn, and me watching you instead of the screen.</p>
+</div>
+<div class="date-item">
+<h3>🥞 Brunch Dates</h3>
+<p>Lazy brunches, coffee, long talks, and endless laughter.</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">For You 💌</h2>
+
+<button class="surprise-btn" onclick="toggle(1)">Open 💝</button>
+<div class="surprise-message" id="s1">You are my safest place.</div>
+
+<button class="surprise-btn" onclick="toggle(2)">Open ✨</button>
+<div class="surprise-message" id="s2">I see my forever when I look at you.</div>
+
+<button class="surprise-btn" onclick="toggle(3)">Open 💕</button>
+<div class="surprise-message" id="s3">I want to live my whole life with you.</div>
+</section>
+
+<footer>
+Made with endless love by <b>Shanu ❤️</b><br>
+<small>You are my forever, Sweety.</small>
+</footer>
+
+</div>
+
+<script>
+function showLove(){
+document.getElementById("success").classList.add("show")
+}
+function toggle(n){
+document.getElementById("s"+n).classList.toggle("show")
+}
+</script>
+</body>
+</html>
